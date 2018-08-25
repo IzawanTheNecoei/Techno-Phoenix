@@ -9,10 +9,6 @@
 	lobby_icon = 'maps/phoenix/face.png' //OMG, pls, change it
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi' // We can steal it from Halo, meh
 	station_networks = list("Phoenix")
-
-	allowed_spawns = list("Cryopods")
-	default_spawn = "Cryopods"
-
 	station_name  = ""
 	station_short = ""
 	dock_name     = ""

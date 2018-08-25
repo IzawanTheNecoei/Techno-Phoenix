@@ -1,7 +1,13 @@
-/datum/job/star_bartender
+/datum/job/star/bartender
+    title = "Star's Bartender"
     department = "Service"
     department_flag = SRV
-    supervisors = "the Executive Officer"
+
+    total_positions = 1
+    spawn_positions = 1
+    department = "Service"
+    department_flag = SRV
+    supervisors = "the Star's Captain"
     ideal_character_age = 30
     selection_color = "#a5c42b"
 
@@ -12,11 +18,11 @@
                         SKILL_CHEMISTRY = SKILL_BASIC)
 
 
-/datum/job/star_assistant
-    title = "Star Passenger"
+/datum/job/star/assistant
+    title = "Star's Passenger"
     total_positions = 12
     spawn_positions = 12
-    supervisors = "the Executive Officer"
+    supervisors = "the Star's Captain"
     selection_color = "#a5c42b"
     economic_modifier = 6
     announced = FALSE
@@ -35,14 +41,14 @@
     outfit_type = /decl/hierarchy/outfit/job/star/passenger
 
 
-/datum/job/star_engineer
-    title = "Star Engineer"
+/datum/job/star/engineer
+    title = "Star's Engineer"
     department = "Engineering"
     department_flag = ENG
 
-    total_positions = 1
-    spawn_positions = 1
-    supervisors = "the Chief Engineer"
+    total_positions = 2
+    spawn_positions = 2
+    supervisors = "the Star's Captain"
     selection_color = "#a5c42b"
     economic_modifier = 6
     minimal_player_age = 14
@@ -73,21 +79,21 @@
                              /datum/computer_file/program/shields_monitor)
 
 
-/datum/job/senior_doctor
-    title = "Physician"
+/datum/job/star/doctor
+    title = "Star's Doctor"
     department = "Medical"
     department_flag = MED
 
     minimal_player_age = 14
     ideal_character_age = 45
-    total_positions = 2
-    spawn_positions = 2
-    supervisors = "the Chief Medical Officer"
+    total_positions = 4
+    spawn_positions = 4
+    supervisors = "the Star's Captain"
     selection_color = "#a5c42b"
     economic_modifier = 8
     alt_titles = list(
         "Surgeon",
-        "Trauma Surgeon")
+        "Chemist")
     outfit_type = /decl/hierarchy/outfit/job/star/medical
 
     min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -109,13 +115,16 @@
 
 
 
-/datum/job/star_commader
-    title = "Star Commander"
-    supervisors = "Yourself"
+/datum/job/star/captain
+    title = "Star's Captain"
+    supervisors = "yourself"
     selection_color = "#a5c42b"
     department = "Command"
     department_flag = COM
+    total_positions = 1
+    spawn_positions = 1
     minimal_player_age = 21
+    ideal_character_age = 45
     economic_modifier = 10
     ideal_character_age = 45
     outfit_type = /decl/hierarchy/outfit/job/star/captain
@@ -137,5 +146,5 @@
                              /datum/computer_file/program/camera_monitor,
                              /datum/computer_file/program/reports)
 
-/datum/job/hop/get_description_blurb()
+/datum/job/star/captain/get_description_blurb()
     return "You are the Commander of Star Ship. You are an experienced blah, blah, blah"

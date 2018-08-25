@@ -4,7 +4,6 @@
 	#include "jobs.dm"
 	#include "outfits.dm"
 	#include "areas.dm"
-	#include "phoenix_overmap.dm"
 
 	#include "CCV_Star/CCV_Star.dmm"
 	#include "CCV_Star/CCV_Star_spawns.dm"
